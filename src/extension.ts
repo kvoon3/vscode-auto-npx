@@ -25,8 +25,6 @@ function setup() {
     t.sendText(resolveCmd(t))
   })
   window.onDidOpenTerminal((t) => {
-    // window.createOutputChannel('ttt', JSON.stringify(t))
-    t.sendText(`echo ${JSON.stringify(t)}`)
     t.sendText(resolveCmd(t))
   })
 }
