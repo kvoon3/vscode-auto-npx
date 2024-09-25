@@ -1,15 +1,15 @@
 {
-  "publisher": "antfu",
-  "name": "auto-npx",
-  "displayName": "Auto NPX",
-  "version": "0.1.0",
+  "publisher": "kvoon",
+  "name": "auto-npx-win-bash",
+  "displayName": "Auto NPX (Windows bash)",
+  "version": "0.1.1",
   "private": true,
-  "packageManager": "pnpm@9.5.0",
+  "packageManager": "pnpm@9.11.0",
   "description": "Auto resolving local Node.js binaries in VS Code terminal",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/antfu/vscode-auto-npx.git"
+    "url": "https://github.com/kvoon3/vscode-auto-npx.git"
   },
   "categories": [
     "Other"
@@ -17,7 +17,7 @@
   "main": "./dist/extension.js",
   "icon": "res/logo.png",
   "engines": {
-    "vscode": "^1.60.0"
+    "vscode": "^1.93.0"
   },
   "activationEvents": [
     "onStartupFinished",
@@ -36,17 +36,18 @@
     "build": "tsup src/extension.ts --external vscode",
     "dev": "nr build --watch src",
     "vscode:prepublish": "npm run build",
-    "release": "bumpp && vsce publish --no-dependencies"
+    "release": "bumpp && vsce publish --no-dependencies",
+    "pack": "vsce pack --no-dependencies"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.22.2",
-    "@antfu/ni": "^0.22.0",
-    "@types/node": "^20.14.10",
-    "@types/vscode": "^1.60.0",
-    "@vscode/vsce": "^2.29.0",
-    "bumpp": "^9.4.1",
-    "eslint": "^9.7.0",
-    "tsup": "^8.1.0",
-    "typescript": "^5.5.3"
+    "@antfu/eslint-config": "^3.7.1",
+    "@antfu/ni": "^0.23.0",
+    "@types/node": "^22.7.0",
+    "@types/vscode": "^1.93.0",
+    "@vscode/vsce": "^3.1.0",
+    "bumpp": "^9.5.2",
+    "eslint": "^9.11.1",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2"
   }
 }
