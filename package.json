@@ -2,7 +2,7 @@
   "publisher": "kvoon",
   "name": "auto-npx-win-bash",
   "displayName": "Auto NPX (Windows bash)",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "packageManager": "pnpm@9.11.0",
   "description": "Auto resolving local Node.js binaries in VS Code terminal",
